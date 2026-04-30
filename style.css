@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Martel:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(images/bg.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.main .box {
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.75;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+}
+nav {
+  display: flex;
+  width: 75vw;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  height: 95px;
+}
+nav img {
+  position: relative;
+  color: rgb(131, 6, 6);
+  width: 148px;
+  z-index: 1;
+}
+nav button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  padding: 9px 15px;
+  border-radius: 4px;
+  color: white;
+  background-color: #be0c0c;
+  border: none;
+  cursor: pointer;
+}
+.hero {
+  height: 70%;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 0px 30px;
+}
+.hero > :first-child {
+  font-family: "poppins", sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 80px;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-family:
+    Martel Sans,
+    sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 80px;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-family:
+    Martel Sans,
+    sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.hero > :nth-child(4) {
+  font-family:
+    Martel Sans,
+    sans-serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 70px;
+}
+.btn {
+  padding: 15px 30px;
+  background-color: #be0c0c;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  bottom: 15px;
+  cursor: pointer;
+}
+.hero input {
+  padding: 15px 145px 15px 15px;
+  background-color: rgba(23, 23, 23, 0.6);
+  border: 0.1px solid rgb(70, 65, 65);
+  border-radius: 4px;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 16px;
+  color: white;
+}
+.saperate {
+  height: 5px;
+  background:
+    radial-gradient(circle at 85% 90%, rgb(251 18 30 / 25%), transparent 40%),
+    linear-gradient(180deg, #1b35a1 0%, #ef4e73 100%);
+}
+section {
+  width: 80vw;
+  margin: auto;
+  margin-top: 55px;
+}
+.p {
+  font-family: "poppins", sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.cards {
+  font-family: "poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+.card1 {
+  background:
+    radial-gradient(circle at 85% 90%, rgba(229, 9, 20, 0.25), transparent 40%),
+    linear-gradient(180deg, #192247 0%, #210e17 100%);
+  height: 18rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 10px 17px;
+  gap: 10px;
+  cursor: pointer;
+}
+.card1:first-child {
+  font-family: "poppins", sans-serif;
+  color: white;
+}
+.card1 .span {
+  font-family: "poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+.card1 img {
+  align-self: flex-end;
+  position: relative;
+  left: 150px;
+  top: 62px;
+}
+.card2 {
+  background:
+    radial-gradient(circle at 85% 90%, rgba(229, 9, 20, 0.25), transparent 40%),
+    linear-gradient(180deg, #192247 0%, #210e17 100%);
+  height: 18rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 10px 17px;
+  gap: 10px;
+  cursor: pointer;
+}
+.card2:first-child {
+  font-family: "poppins", sans-serif;
+  color: white;
+}
+.card2 .span {
+  font-family: "poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+.card2 img {
+  align-self: flex-end;
+  position: relative;
+  left: 150px;
+  top: 38px;
+}
+.card3 {
+  background:
+    radial-gradient(circle at 85% 90%, rgba(229, 9, 20, 0.25), transparent 40%),
+    linear-gradient(180deg, #192247 0%, #210e17 100%);
+  height: 18rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 10px 17px;
+  gap: 10px;
+  cursor: pointer;
+}
+.card3:first-child {
+  font-family: "poppins", sans-serif;
+  color: white;
+}
+.card3 .span {
+  font-family: "poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+.card3 img {
+  align-self: flex-end;
+  position: relative;
+  left: 150px;
+  top: 28px;
+}
+.card4 {
+  background:
+    radial-gradient(circle at 85% 90%, rgba(229, 9, 20, 0.25), transparent 40%),
+    linear-gradient(180deg, #192247 0%, #210e17 100%);
+  height: 18rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 10px 17px;
+  gap: 10px;
+  cursor: pointer;
+}
+.card4:first-child {
+  font-family: "poppins", sans-serif;
+  color: white;
+}
+.card4 .span {
+  font-family: "poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+.card4 img {
+  align-self: flex-end;
+  position: relative;
+  left: 150px;
+  top: 32px;
+}
+
+.second {
+  font-family: "poppins", sans-serif;
+  width: 80vw;
+  height: 500px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.sec-faq:hover {
+  background-color: #3d3d3d;
+}
+.sec-faq {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "poppins" sans-serif;
+  background-color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 23px;
+  margin: 10px auto;
+  cursor: pointer;
+}
